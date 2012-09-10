@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = Deelay::VERSION
   s.authors     = ["Grzegorz Biesiadecki"]
   s.email       = ["gbiesiadecki@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "http://deelay.me"
+  s.summary     = %q{Delaying proxy for http resources}
+  s.description = %q{With Deelay you can delay loading web resources with specified time}
 
   s.rubyforge_project = "deelay"
 
@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
+  s.add_development_dependency "rake"
   # s.add_runtime_dependency "rest-client"
 end
