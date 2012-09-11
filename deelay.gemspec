@@ -1,13 +1,14 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
 require "deelay/version"
+require "deelay/homepage"
 
 Gem::Specification.new do |s|
   s.name        = "deelay"
   s.version     = Deelay::VERSION
   s.authors     = ["Grzegorz Biesiadecki"]
   s.email       = ["gbiesiadecki@gmail.com"]
-  s.homepage    = "http://deelay.me"
+  s.homepage    = Deelay::HOMEPAGE
   s.summary     = %q{Delaying proxy for http resources}
   s.description = %q{With Deelay you can delay loading web resources with specified time}
 
