@@ -15,7 +15,7 @@ class DeelayApp < Sinatra::Base
   end
 
   error 400..510 do
-    "<script>(function () { location.href = '#{Deelay::HOMEPAGE}/error'; }())</script>"
+    redirect "#{Deelay::HOMEPAGE}/error"
   end
 
 end
