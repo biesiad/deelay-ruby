@@ -1,3 +1,3 @@
 module Deelay
-  HOMEPAGE = "http://deelay.me/"
+  HOMEPAGE = "http://deelay.me"
 end
