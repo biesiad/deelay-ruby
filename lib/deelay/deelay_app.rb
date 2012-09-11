@@ -8,7 +8,7 @@ class DeelayApp < Sinatra::Application
     delay = params[:delay].to_i
     url = params[:splat].first
 
-    sleep(delay * 1000)
+    sleep(delay / 1000)
     redirect url
   end
 
