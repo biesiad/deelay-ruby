@@ -4,9 +4,9 @@ require "uri"
 module Deelay
 class DeelayApp < Sinatra::Application
 
-  get '/:delay/*' do
+  get '/:delay' do
     delay = params[:delay].to_i
-    url = params[:splat].first
+    url = request.query_string
 
     sleep(delay / 1000)
     redirect url
