@@ -3,9 +3,6 @@ require "uri"
 
 module Deelay
   class DeelayApp < Sinatra::Application
-    get '/' do
-      "Deelay app is running<BR>TODO: Add info here"
-    end
 
     get '/:delay' do
       delay = params[:delay].to_i
