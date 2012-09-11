@@ -2,17 +2,15 @@ require "sinatra"
 require "uri"
 
 module Deelay
-  class DeelayApp < Sinatra::Application
+class DeelayApp < Sinatra::Application
 
-    get '/:delay' do
-      delay = params[:delay].to_i
-      url = params[:url]
+  get '/:delay/*' do
+    delay = params[:delay].to_i
+    url = params[:splat].first
 
-      redirect('http://deelay.me/') if (url =~ URI::regexp).nil?
-
-      sleep delay
-      redirect url
-    end
-
+    sleep(delay * 1000)
+    redirect url
   end
+
+end
 end
