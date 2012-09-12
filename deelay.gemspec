@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Grzegorz Biesiadecki"]
   s.email       = ["gbiesiadecki@gmail.com"]
   s.homepage    = Deelay::HOMEPAGE
-  s.summary     = %q{Delaying proxy for http resources}
-  s.description = %q{With Deelay you can delay loading web resources with specified time}
+  s.summary     = %q{Delay proxy}
+  s.description = %q{Delay proxy for http resources}
 
   s.rubyforge_project = "deelay"
 
