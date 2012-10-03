@@ -14,7 +14,7 @@ class DeelayApp < Sinatra::Base
     redirect url
   end
 
-  error 400..510 do
+  error do
     redirect "#{Deelay::HOMEPAGE}/error"
   end
 
