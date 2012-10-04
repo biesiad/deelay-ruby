@@ -6,7 +6,7 @@ class DeelayApp < Sinatra::Base
 
   get '/:delay' do
     delay = params[:delay].to_i
-    url = request.query_string
+    url = URI.unescape(request.query_string)
 
     raise "Invalid URL" if (URI::regexp =~ url).nil?
 
