@@ -1,6 +1,6 @@
 # [Deelay.me](http://deelay.me)
 
-### Inline delay proxy for http resources
+**Inline delay proxy for http resources**
 
 Slow loading resources (images, scripts, etc) can break your code. Test it simulating unexpected network conditions applied to specific resource.
 
