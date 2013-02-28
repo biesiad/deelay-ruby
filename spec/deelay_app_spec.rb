@@ -4,11 +4,11 @@ require 'rack/test'
 
 Sinatra::Base.set :environment, :test
 
-describe "DeelayApp" do
+describe "Deelay::App" do
   include Rack::Test::Methods
 
   def app
-    Deelay::DeelayApp
+    Deelay::App
   end
 
   context "when url invalid" do
