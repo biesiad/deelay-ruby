@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 require 'deelay'
 
-Deelay::DeelayApp.run!
+Deelay::App.run!
