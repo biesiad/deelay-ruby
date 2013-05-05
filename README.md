@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/biesiad/deelay.png)](https://travis-ci.org/biesiad/deelay)
+
 # [Deelay.me](http://deelay.me)
 
 **Inline delay proxy for http resources**
