@@ -1,12 +1,13 @@
-require_relative "delay.rb"
-require "sinatra"
+require "sinatra/async"
 
 module Deelay
   class App < Sinatra::Base
+    register Sinatra::Async
 
-    get '/:delay' do
-      redirect Deelay.delay(params[:delay], request.query_string)
+    aget '/:delay' do |delay|
+      EM.add_timer(delay.to_i/1000) do
+        async_schedule { redirect Deelay.parse(request.query_string) }
+      end
     end
-
   end
 end
