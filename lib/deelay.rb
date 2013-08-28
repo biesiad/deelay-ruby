@@ -1,4 +1,4 @@
 require "deelay/version"
 require "deelay/homepage"
-require "deelay/delay"
+require "deelay/parse"
 require "deelay/app"
