@@ -21,5 +21,5 @@ Listening on 0.0.0.0:4567, CTRL+C to stop
 ## Usage
 
 ```html
-<img src="localhost:4567/1000?http://mysite.com/image.gif">
+<img src="localhost:4567/1000/http://mysite.com/image.gif">
 ```
