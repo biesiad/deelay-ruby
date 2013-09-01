@@ -1,4 +1,3 @@
-require "deelay/version"
-require "deelay/homepage"
-require "deelay/parse"
-require "deelay/app"
+require_relative "deelay/version"
+require_relative "deelay/homepage"
+require_relative "deelay/app"
