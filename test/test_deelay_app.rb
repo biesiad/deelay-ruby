@@ -1,9 +1,11 @@
 require 'minitest/autorun'
 require 'eventmachine'
 require 'sinatra/async/test'
+require 'coveralls'
 
 require_relative '../lib/deelay'
 
+Coveralls.wear!
 Sinatra::Base.set :environment, :test
 
 class TestDeelayApp < MiniTest::Unit::TestCase
