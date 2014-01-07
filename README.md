@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/biesiad/deelay.png)](https://travis-ci.org/biesiad/deelay)
 [![Code Climate](https://codeclimate.com/github/biesiad/deelay.png)](https://codeclimate.com/github/biesiad/deelay)
 [![Gem Version](https://badge.fury.io/rb/deelay.png)](http://badge.fury.io/rb/deelay)
+![Google Analitycs beacon](https://ga-beacon.appspot.com/UA-46903362-1/multiDownload/README.md)
 
 # [Deelay.me](http://deelay.me)
 
