@@ -6,12 +6,12 @@ module Deelay
 
     aget '/:delay' do
       url = Deelay.parse_query_string(request.query_string)
-      redirect_to url
+      redirect_to(url, params[:delay].to_i)
     end
 
     aget '/:delay/*' do
       url = Deelay.parse_splat(params[:splat].join("/"), request.query_string)
-      redirect_to url
+      redirect_to(url, params[:delay].to_i)
     end
 
 
@@ -33,4 +33,3 @@ module Deelay
     end
   end
 end
-
