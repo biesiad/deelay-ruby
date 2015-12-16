@@ -36,6 +36,12 @@ class TestDeelayApp < MiniTest::Unit::TestCase
     assert_equal 302, last_response.status
   end
 
+  def test_redirect_url_with_https
+    get "/10/https://testurl.com/path"
+    em_async_continue
+    assert_equal "https://testurl.com/path", last_response.location
+    assert_equal 302, last_response.status
+  end
 
   def test_redirect_url_with_scheme
     get "/10/http://testurl.com/path"

@@ -13,8 +13,9 @@ module Deelay
     raise ArgumentError, "Missing URL" if splat.empty?
 
     escaped_url = ::URI.unescape(splat)
-    url = escaped_url.sub(/^http:\//, "http://")
-    url = "http://" + url if url !~ /^http:\/\//
+    protocol = (escaped_url =~ /^https:/) ? 'https' : 'http'
+    url = escaped_url.sub(/^(http|https):\//, "#{protocol}://")
+    url = "#{protocol}://" + url if url !~ /^#{protocol}:\/\//
     url << "?" + query_string if !query_string.empty?
     return url
   end
