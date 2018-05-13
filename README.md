@@ -25,3 +25,8 @@ Listening on 0.0.0.0:4567, CTRL+C to stop
 ```html
 <img src="localhost:4567/1000/http://mysite.com/image.gif">
 ```
+
+## Tests
+```sh
+bundle exec rake test
+```
