@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.homepage    = Deelay::HOMEPAGE
   s.summary     = %q{Delay proxy}
   s.description = %q{Delay proxy for http resources}
+  s.required_ruby_version = '~> 2.3.5'
 
   s.rubyforge_project = "deelay"
 
