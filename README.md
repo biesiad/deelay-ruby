@@ -1,3 +1,5 @@
+# This tool is no longer maintained. New version is implemented in Node.js and available at https://github.com/biesiad/deelay.
+
 [![Build Status](https://travis-ci.org/biesiad/deelay.png)](https://travis-ci.org/biesiad/deelay)
 [![Code Climate](https://codeclimate.com/github/biesiad/deelay.png)](https://codeclimate.com/github/biesiad/deelay)
 [![Gem Version](https://badge.fury.io/rb/deelay.png)](http://badge.fury.io/rb/deelay)
