@@ -22,10 +22,10 @@ Maximum connections set to 1024
 Listening on 0.0.0.0:4567, CTRL+C to stop
 ```
 
-## Usage
+## Example usage
 
 ```html
-<img src="localhost:4567/1000/http://mysite.com/image.gif">
+curl localhost:4567/1000/http://mysite.com/image.gif
 ```
 
 ## Tests
